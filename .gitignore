@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+*.code-snippets
+src/
+input.txt
+output.txt

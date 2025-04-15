@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "C/C++: g++ アクティブ ファイルのビルドとデバッグ",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug.out",
+            "args": [
+                "<${workspaceFolder}/input.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "gdb の再フォーマットを有効にする",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "逆アセンブリ フレーバーを Intel に設定",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file for debug",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ],
+    "version": "2.0.0"
+}
