@@ -31,7 +31,8 @@
 *.out
 *.app
 
+test/
 *.code-snippets
-src/
+*.cpp
 input.txt
 output.txt
