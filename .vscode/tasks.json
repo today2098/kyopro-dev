@@ -11,6 +11,8 @@
                 "-Wall",
                 "-Wextra",
                 "-fdiagnostics-color=always",
+                "-I",
+                "${workspaceFolder}/../algorithm-dev/",
                 "-o",
                 "${workspaceFolder}/debug.out",
                 "${file}"
@@ -34,6 +36,8 @@
                 "-std=gnu++23",
                 "-fdiagnostics-color=always",
                 "-g",
+                "-I",
+                "${workspaceFolder}/../algorithm-dev/",
                 "-o",
                 "${workspaceFolder}/debug.out",
                 "${file}"
